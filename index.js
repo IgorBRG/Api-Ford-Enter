@@ -60,7 +60,7 @@ app.get("/vehicles", (req, res) => {
         volumetotal: 1500,
         connected: 500,
         softwareUpdates: 750,
-        img: "http://localhost:3001/img/storm.png",
+        img: "http://localhost:3001/img/storm.jpg",
       },
       {
         id: 3,
@@ -124,7 +124,7 @@ app.post("/vehicleData", (req, res) => {
           volumetotal: 1500,
           connected: 500,
           softwareUpdates: 750,
-          img: "https://api-ford-enter.onrender.com/img/storm.png",
+          img: "https://api-ford-enter.onrender.com/img/storm.jpg",
         });
 
       case "2FRHDUYS2Y63NHD22455":
