@@ -80,6 +80,15 @@ app.get("/vehicles", (req, res) => {
         softwareUpdates: 2050,
         img: "http://localhost:3001/img/broncoSport.png",
       },
+      {
+        id: 7,
+        vehicle: "Ranger Storm",
+        vin: "2FRHDUYS2Y63NHD22654",
+        volumetotal: 145750,
+        connected: 70000,
+        softwareUpdates: 27020,
+        img: "http://localhost:3001/img/storm.jpg",
+      }
       
     ];
 
