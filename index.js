@@ -156,6 +156,17 @@ app.post("/vehicleData", (req, res) => {
           img: "https://api-ford-enter.onrender.com/img/broncoSport.png",
         });
 
+        case "2FRHDUYS2Y63NHD22456":
+          return res.status(200).json({
+            id: 7,
+            vehicle: "Ranger Storm",
+            volumetotal: 145750,
+            connected: 70000,
+            softwareUpdates: 27020,
+            img: "https://api-ford-enter.onrender.com/img/storm.jpg",
+
+          })
+
       case "2FRHDUYS2Y63NHD22654":
         return res.status(200).json({
           id: 5,
@@ -175,6 +186,8 @@ app.post("/vehicleData", (req, res) => {
           lat: -12.2322,
           long: -35.2314,
         });
+
+        
 
       default:
         return res.status(400).json({
