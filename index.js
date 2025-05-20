@@ -55,12 +55,12 @@ app.get("/vehicles", (req, res) => {
       },
       {
         id: 2,
-        vehicle: "Ranger Storm",
+        vehicle: "Mustang",
         vin: "2RFAASDY54E4HDU34874",
         volumetotal: 1500,
         connected: 500,
         softwareUpdates: 750,
-        img: "http://localhost:3001/img/storm.jpg",
+        img: "http://localhost:3001/img/mustang.png",
       },
       {
         id: 3,
@@ -80,7 +80,6 @@ app.get("/vehicles", (req, res) => {
         softwareUpdates: 2050,
         img: "http://localhost:3001/img/broncoSport.png",
       },
-      
       
     ];
 
@@ -115,7 +114,7 @@ app.post("/vehicleData", (req, res) => {
       case "2RFAASDY54E4HDU34874":
         return res.status(200).json({
           id: 2,
-          vehicle: "Ranger Storm",
+          vehicle: "Mustang",
           odometro: 130000,
           nivelCombustivel: 19,
           status: "off",
@@ -124,7 +123,7 @@ app.post("/vehicleData", (req, res) => {
           volumetotal: 1500,
           connected: 500,
           softwareUpdates: 750,
-          img: "https://api-ford-enter.onrender.com/img/storm.jpg",
+          img: "https://api-ford-enter.onrender.com/img/mustang.png",
         });
 
       case "2FRHDUYS2Y63NHD22455":
@@ -157,7 +156,6 @@ app.post("/vehicleData", (req, res) => {
           img: "https://api-ford-enter.onrender.com/img/broncoSport.png",
         });
 
-
       case "2FRHDUYS2Y63NHD22654":
         return res.status(200).json({
           id: 5,
@@ -177,8 +175,6 @@ app.post("/vehicleData", (req, res) => {
           lat: -12.2322,
           long: -35.2314,
         });
-
-        
 
       default:
         return res.status(400).json({
